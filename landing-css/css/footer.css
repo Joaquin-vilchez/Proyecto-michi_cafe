@@ -1,0 +1,45 @@
+/* RESET */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+
+/* HEADER */
+.header {
+    background-color: #6d4c41; color: white; display: flex; justify-content: space-between; padding: 20px; align-items: center;
+}
+.nav-menu ul { list-style: none; display: flex; gap: 15px; }
+.nav-menu a { color: white; text-decoration: none; }
+
+/* BOTONES */
+.btn-primary {
+    background-color: #ffb300; color: #4e342e; padding: 10px 20px; border: none; border-radius: 5px; text-decoration: none; cursor: pointer; display: inline-block; font-weight: bold;
+}
+.btn-primary:hover { background-color: #ffa000; }
+
+/* HERO */
+.hero {
+    background-color: #d7ccc8; text-align: center; padding: 100px 20px;
+}
+.hero h1 { color: #4e342e; margin-bottom: 15px; }
+
+/* SERVICIOS / CARDS */
+.servicios { padding: 50px 20px; text-align: center; }
+.cards-container {
+    display: flex; gap: 20px; justify-content: center; margin-top: 20px; flex-wrap: wrap;
+}
+.card {
+    background: #f5f5f5; border: 1px solid #ccc; padding: 20px; border-radius: 8px; width: 300px;
+}
+.card h3 { color: #6d4c41; margin-bottom: 10px; }
+
+/* NOSOTROS & CONTACTO */
+.nosotros, .contacto { padding: 50px 20px; text-align: center; background-color: #efebe9; }
+.contact-form { display: flex; flex-direction: column; gap: 15px; max-width: 400px; margin: 0 auto; }
+.contact-form input, .contact-form textarea { padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+
+/* FOOTER */
+.footer { background-color: #4e342e; color: white; text-align: center; padding: 20px; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .header { flex-direction: column; text-align: center; gap: 10px; }
+    .cards-container { flex-direction: column; align-items: center; }
+}

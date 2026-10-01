@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MichiCaf  Santuario & Caf de Especialidad</title>
+    
+    <!-- Tipografa Literata y Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            primary: '#c86d51',
+                            'primary-dark': '#a24f36',
+                            secondary: '#eed5cb',
+                            surface: '#fff8f6',
+                            'surface-low': '#fff1ec',
+                            espresso: '#2f1e18',
+                            muted: '#7d6e68'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Literata', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#fff8f6] text-[#2f1e18] font-sans antialiased selection:bg-[#eed5cb] selection:text-[#a24f36]">
+
+    <!-- HEADER / NAVEGACIN -->
+    <header class="sticky top-0 z-50 bg-[#fff8f6]/90 backdrop-blur-md border-b border-[#eed5cb]/60 transition-all">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Marca & Estado -->
+            <div class="flex items-center gap-5">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-[#eed5cb] flex items-center justify-center text-[#c86d51]">
+                        <!-- Icono Michi / Taza -->
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                            <path d="M12 2C8 2 4 4 3 8c-1 4 .5 8 3 10v2h12v-2c2.5-2 4-6 3-10-1-4-5-6-9-6zm-4 4c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1zm8 0c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1z"/>
+                        </svg>
+                    </div>
+                    <span class="font-serif text-2xl font-bold tracking-tight text-[#2f1e18]">MichiCaf</span>
+                </a>
+                <div class="hidden sm:flex items-center gap-2 px-3 py-1 rounded-full bg-[#fff1ec] border border-[#eed5cb] text-xs font-medium text-[#7d6e68]">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    Abierto hoy: 10:00  20:00
+                </div>
+            </div>
+            
+            <!-- Men Enlaces -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-[#7d6e68]">
+                <a href="index.html" class="text-[#c86d51] font-semibold border-b-2 border-[#c86d51] pb-1">Inicio</a>
+                <a href="../Nuestros michi.html" class="hover:text-[#c86d51] transition-colors">Nuestros Michis</a>
+                <a href="../Menu.html" class="hover:text-[#c86d51] transition-colors">Men</a>
+                <a href="../Reservacione y reglas.html" class="hover:text-[#c86d51] transition-colors">Reservaciones & Reglas</a>
+            </nav>
+            
+            <!-- CTA Mesa -->
+            <div class="flex items-center gap-3">
+                <a href="#reservas" class="px-5 py-2.5 rounded-full bg-[#c86d51] hover:bg-[#a24f36] text-white font-medium text-sm transition shadow-sm hover:shadow-md">
+                    Reservar Mesa
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="max-w-7xl mx-auto px-6 py-16 lg:py-24 grid lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#fff1ec] border border-[#eed5cb] text-xs font-semibold text-[#c86d51] uppercase tracking-wider">
+                    ?? Santuario Urbano & Cafetera Artesanal
+                </div>
+                <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-normal leading-tight text-[#2f1e18]">
+                    Un caf calientito, un ronroneo y el <span class="italic font-bold text-[#c86d51]">mejor momento</span> de tu da.
+                </h1>
+                <p class="text-base sm:text-lg text-[#7d6e68] max-w-xl leading-relaxed">
+                    Disfruta de caf de especialidad de origen tico en un entorno de paz absoluta, rodeado de gatos rescatados en bsqueda de mimos y un hogar definitivo para siempre.
+                </p>
+                <div class="flex flex-wrap items-center gap-4 pt-2">
+                    <a href="#reservas" class="px-6 py-3.5 rounded-full bg-[#c86d51] hover:bg-[#a24f36] text-white font-medium shadow-md transition flex items-center gap-2">
+                        Reservar Visita ??
+                    </a>
+                    <a href="#michis" class="px-6 py-3.5 rounded-full bg-[#fff1ec] hover:bg-[#eed5cb] text-[#2f1e18] font-medium border border-[#eed5cb] transition flex items-center gap-2">
+                        Conocer a los Michis ??
+                    </a>
+                </div>
+                <!-- Sellos de valor -->
+                <div class="pt-8 grid grid-cols-3 gap-4 border-t border-[#eed5cb]/60">
+                    <div class="space-y-1">
+                        <p class="font-bold text-sm text-[#2f1e18]">? Caf Especial</p>
+                        <p class="text-xs text-[#7d6e68]">Tueste local 86+ pts</p>
+                    </div>
+                    <div class="space-y-1">
+                        <p class="font-bold text-sm text-[#2f1e18]">?? 100% Cuidados</p>
+                        <p class="text-xs text-[#7d6e68]">Vacunas y esterilizados</p>
+                    </div>
+                    <div class="space-y-1">
+                        <p class="font-bold text-sm text-[#2f1e18]">?? Sala Climatizada</p>
+                        <p class="text-xs text-[#7d6e68]">Filtros HEPA anti-estrs</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Imagen Hero con Card flotante -->
+            <div class="lg:col-span-5 relative">
+                <div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl bg-[#eed5cb] border-4 border-white">
+                    <img src="img/hero-banner.jpg" alt="Gatito descansando junto a una taza de caf" class="w-full h-full object-cover">
+                </div>
+                <!-- Badge flotante de estado en vivo -->
+                <div class="absolute -bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/95 backdrop-blur shadow-xl border border-[#eed5cb] flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <span class="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"></span>
+                        <div>
+                            <p class="text-xs font-semibold text-[#2f1e18]">Milo est ronroneando</p>
+                            <p class="text-[11px] text-[#7d6e68]">Zona de Solrium  Disponible para mimos</p>
+                        </div>
+                    </div>
+                    <span class="text-xl">??</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- PASO A PASO: CMO FUNCIONA? -->
+        <section class="max-w-7xl mx-auto px-6 py-20">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-xs font-bold text-[#c86d51] uppercase tracking-wider">Paso a Paso</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-normal text-[#2f1e18]">Cmo funciona tu experiencia en MichiCaf?</h2>
+                <p class="text-[#7d6e68] text-sm sm:text-base">Cuidamos al mximo la tranquilidad de nuestros huspedes felinos limitando la capacidad de visitantes por turno.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Tarjeta 1 -->
+                <div class="p-8 rounded-3xl bg-[#fff1ec] border border-[#eed5cb] space-y-4">
+                    <div class="text-3xl font-serif text-[#c86d51]/40 font-bold">01</div>
+                    <h3 class="font-serif text-xl font-bold text-[#2f1e18]">1. Reserva tu franja horaria</h3>
+                    <p class="text-sm text-[#7d6e68] leading-relaxed">Elige tu bloque de 60 o 90 minutos. Al restringir el aforo mantenemos un clima calmo, silencioso y seguro para los gatos.</p>
+                    <div class="pt-2 text-xs font-medium text-[#c86d51]">Aforo mx. 12 personas/turno</div>
+                </div>
+                <!-- Tarjeta 2 -->
+                <div class="p-8 rounded-3xl bg-[#fff1ec] border border-[#eed5cb] space-y-4">
+                    <div class="text-3xl font-serif text-[#c86d51]/40 font-bold">02</div>
+                    <h3 class="font-serif text-xl font-bold text-[#2f1e18]">2. Pide tu caf y delicias</h3>
+                    <p class="text-sm text-[#7d6e68] leading-relaxed">Selecciona tu espresso favorito, infusiones florales o nuestras galletas artesanales horneadas diariamente en cocina aislada.</p>
+                    <div class="pt-2 text-xs font-medium text-[#c86d51]">Higiene con doble esclusa</div>
+                </div>
+                <!-- Tarjeta 3 -->
+                <div class="p-8 rounded-3xl bg-[#fff1ec] border border-[#eed5cb] space-y-4">
+                    <div class="text-3xl font-serif text-[#c86d51]/40 font-bold">03</div>
+                    <h3 class="font-serif text-xl font-bold text-[#2f1e18]">3. Conecta y, si surge amor... adopta!</h3>
+                    <p class="text-sm text-[#7d6e68] leading-relaxed">Acaricia, juega con plumitas y respeta sus tiempos de siesta. Si encuentras a tu alma gemela, nuestro equipo te guiar en la adopcin responsable.</p>
+                    <div class="pt-2 text-xs font-medium text-[#c86d51]">+140 adopciones felices</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MICHIS DEL MES -->
+        <section id="michis" class="max-w-7xl mx-auto px-6 py-12">
+            <div class="flex items-end justify-between mb-10">
+                <div>
+                    <span class="text-xs font-bold text-[#c86d51] uppercase tracking-wider">Residentes Estrella</span>
+                    <h2 class="font-serif text-3xl font-normal text-[#2f1e18]">Conoce a los michis del mes</h2>
+                </div>
+                <a href="../Nuestros michi.html" class="text-sm font-semibold text-[#c86d51] hover:underline">Ver todos los gatos (16)</a>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Perfil 1 -->
+                <div class="rounded-3xl bg-white border border-[#eed5cb] overflow-hidden shadow-sm hover:shadow-md transition group">
+                    <div class="aspect-square bg-[#eed5cb] relative overflow-hidden">
+                        <img src="img/milo.jpg" alt="Milo" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/90 backdrop-blur text-xs font-semibold text-[#c86d51]">En Adopcin</span>
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <div class="flex justify-between items-baseline">
+                            <h4 class="font-serif text-xl font-bold text-[#2f1e18]">Milo</h4>
+                            <span class="text-xs text-[#7d6e68]">2 aos</span>
+                        </div>
+                        <p class="text-xs text-[#7d6e68]">Experto en siestas al sol, amante de las cosquillas en la barbilla y embajador de bienvenida nmero uno.</p>
+                        <div class="pt-3 flex flex-wrap gap-1.5">
+                            <span class="px-2.5 py-0.5 rounded-full bg-[#fff1ec] text-[11px] text-[#7d6e68]">Sociable</span>
+                            <span class="px-2.5 py-0.5 rounded-full bg-[#fff1ec] text-[11px] text-[#7d6e68]">Ronroneador</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Perfil 2 -->
+                <div class="rounded-3xl bg-white border border-[#eed5cb] overflow-hidden shadow-sm hover:shadow-md transition group">
+                    <div class="aspect-square bg-[#eed5cb] relative overflow-hidden">
+                        <img src="img/luna.jpg" alt="Luna" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/90 backdrop-blur text-xs font-semibold text-[#c86d51]">En Adopcin</span>
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <div class="flex justify-between items-baseline">
+                            <h4 class="font-serif text-xl font-bold text-[#2f1e18]">Luna</h4>
+                            <span class="text-xs text-[#7d6e68]">1.5 aos</span>
+                        </div>
+                        <p class="text-xs text-[#7d6e68]">Elegante y silenciosa. Le fascinan las plumas telescpicas y acurrucarse en tu regazo mientras lees un libro.</p>
+                        <div class="pt-3 flex flex-wrap gap-1.5">
+                            <span class="px-2.5 py-0.5 rounded-full bg-[#fff1ec] text-[11px] text-[#7d6e68]">Tranquila</span>
+                            <span class="px-2.5 py-0.5 rounded-full bg-[#fff1ec] text-[11px] text-[#7d6e68]">Cariosa</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Perfil 3 -->
+                <div class="rounded-3xl bg-white border border-[#eed5cb] overflow-hidden shadow-sm hover:shadow-md transition group">
+                    <div class="aspect-square bg-[#eed5cb] relative overflow-hidden">
+                        <img src="img/canela.jpg" alt="Canela" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-amber-100 text-xs font-semibold text-amber-800">Proceso iniciado</span>
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <div class="flex justify-between items-baseline">
+                            <h4 class="font-serif text-xl font-bold text-[#2f1e18]">Canela</h4>
+                            <span class="text-xs text-[#7d6e68]">8 meses</span>
+                        </div>
+                        <p class="text-xs text-[#7d6e68]">Chispa pura y dulzura. Su especialidad es cazar pelotas de fieltro y amasar suavemente tus rodillas.</p>
+                        <div class="pt-3 flex flex-wrap gap-1.5">
+                            <span class="px-2.5 py-0.5 rounded-full bg-[#fff1ec] text-[11px] text-[#7d6e68]">Cachorrita</span>
+                            <span class="px-2.5 py-0.5 rounded-full bg-[#fff1ec] text-[11px] text-[#7d6e68]">Exploradora</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ESPECIALIDADES DEL MES -->
+        <section class="max-w-7xl mx-auto px-6 py-16">
+            <div class="flex items-end justify-between mb-10">
+                <div>
+                    <span class="text-xs font-bold text-[#c86d51] uppercase tracking-wider">Barra de Especialidad</span>
+                    <h2 class="font-serif text-3xl font-normal text-[#2f1e18]">Especialidades del Mes</h2>
+                </div>
+                <a href="../Menu.html" class="text-sm font-semibold text-[#c86d51] hover:underline">Explorar la Carta Completa</a>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Producto 1 -->
+                <div class="p-5 rounded-3xl bg-[#fff1ec] border border-[#eed5cb] space-y-4">
+                    <div class="aspect-[4/3] rounded-2xl bg-[#eed5cb] overflow-hidden">
+                        <img src="img/galletas.jpg" alt="Galletas Huellita" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex justify-between items-baseline">
+                        <h4 class="font-serif text-lg font-bold text-[#2f1e18]">Galletas de Huellita</h4>
+                        <span class="font-bold text-[#c86d51]">S/ 55</span>
+                    </div>
+                    <p class="text-xs text-[#7d6e68]">Mantequilla tostada, canela de Ceiln y un toque de vainilla de Papantla. Horneadas cada maana.</p>
+                </div>
+                <!-- Producto 2 -->
+                <div class="p-5 rounded-3xl bg-[#fff1ec] border border-[#eed5cb] space-y-4">
+                    <div class="aspect-[4/3] rounded-2xl bg-[#eed5cb] overflow-hidden">
+                        <img src="img/meowchiato.jpg" alt="Meowchiato de Caramelo" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex justify-between items-baseline">
+                        <h4 class="font-serif text-lg font-bold text-[#2f1e18]">Meowchiato Caramelo</h4>
+                        <span class="font-bold text-[#c86d51]">S/ 78</span>
+                    </div>
+                    <p class="text-xs text-[#7d6e68]">Doble shot de espresso de Chiapas, leche texturizada al vapor y caramelo de flor de sal casero.</p>
+                </div>
+                <!-- Producto 3 -->
+                <div class="p-5 rounded-3xl bg-[#fff1ec] border border-[#eed5cb] space-y-4">
+                    <div class="aspect-[4/3] rounded-2xl bg-[#eed5cb] overflow-hidden">
+                        <img src="img/cheesecake.jpg" alt="Cheesecake Japons" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex justify-between items-baseline">
+                        <h4 class="font-serif text-lg font-bold text-[#2f1e18]">Cheesecake Japons</h4>
+                        <span class="font-bold text-[#c86d51]">S/ 92</span>
+                    </div>
+                    <p class="text-xs text-[#7d6e68]">Textura souffl ligera y etrea que se deshace en la boca, acompaado de coulis de frutos del bosque.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- BANNER LLAMADO A RESERVAR -->
+        <section id="reservas" class="max-w-7xl mx-auto px-6 py-12">
+            <div class="rounded-3xl bg-[#c86d51] text-white p-8 sm:p-12 lg:p-16 flex flex-col md:flex-row items-center justify-between gap-8 shadow-xl">
+                <div class="space-y-4 max-w-xl">
+                    <span class="px-3 py-1 rounded-full bg-white/20 text-xs font-semibold uppercase tracking-wider">Plazas limitadas por sesin</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-normal leading-tight">Reserva tu lugar y djate consentir por nuestros michis</h2>
+                    <p class="text-white/80 text-sm sm:text-base">Los fines de semana suelen llenarse rpido. Asegura tu mesa con antelacin y preprate para una tarde inolvidable de caf y ronroneos.</p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+                    <a href="../Reservacione y reglas.html" class="px-8 py-4 rounded-full bg-white hover:bg-[#fff1ec] text-[#2f1e18] font-semibold text-center shadow-lg transition">Reservar Ahora</a>
+                    <a href="../Menu.html" class="px-8 py-4 rounded-full bg-white/10 hover:bg-white/20 text-white font-semibold text-center transition border border-white/30">Ver Bebidas</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#fff1ec] border-t border-[#eed5cb] py-16 text-[#7d6e68] text-sm">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+            <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-full bg-[#eed5cb] flex items-center justify-center text-[#c86d51]">??</div>
+                    <span class="font-serif text-xl font-bold text-[#2f1e18]">MichiCaf</span>
+                </div>
+                <p class="text-xs leading-relaxed">Un refugio sereno de caf de especialidad y ronroneos. Fomentamos la adopcin responsable, el bienestar felino y la pausa consciente.</p>
+            </div>
+            <div>
+                <h5 class="font-bold text-[#2f1e18] text-xs uppercase tracking-wider mb-3">Horarios & Visitas</h5>
+                <p class="text-xs leading-relaxed"><strong class="text-[#2f1e18]">Martes a Domingo:</strong><br>10:00 hrs  20:00 hrs<br><span class="text-[11px] text-[#c86d51]">Lunes cerrado por descanso veterinario.</span></p>
+            </div>
+            <div>
+                <h5 class="font-bold text-[#2f1e18] text-xs uppercase tracking-wider mb-3">Ubicacin</h5>
+                <p class="text-xs leading-relaxed">Calle Las Delicias 418, Barrio Gtico<br>Ciudad de Mxico, CP 06700</p>
+            </div>
+            <div>
+                <h5 class="font-bold text-[#2f1e18] text-xs uppercase tracking-wider mb-3">Historias & Adopciones</h5>
+                <p class="text-xs mb-3">Recibe novedades semanales sobre nuevos michis y eventos.</p>
+                <div class="flex gap-2">
+                    <input type="email" placeholder="tu-correo@ejemplo.com" class="w-full px-3 py-2 text-xs rounded-full border border-[#eed5cb] bg-white focus:outline-none focus:ring-1 focus:ring-[#c86d51]">
+                    <button class="px-4 py-2 rounded-full bg-[#c86d51] text-white text-xs font-semibold hover:bg-[#a24f36]">Unirse</button>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-12 pt-6 border-t border-[#eed5cb]/60 flex flex-col sm:flex-row justify-between text-xs text-[#7d6e68] gap-4">
+            <p> 2024 MichiCaf Sanctuary & Specialty Coffee. Todos los derechos reservados.</p>
+            <div class="flex gap-4">
+                <a href="../Reservacione y reglas.html" class="hover:underline">Reglamento de Sala</a>
+                <a href="#" class="hover:underline">Aviso de Privacidad</a>
+                <a href="#" class="hover:underline">Protocolo de Bienestar</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
+

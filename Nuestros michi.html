@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Michis — MichiCafé Sanctuary & Specialty Coffee</title>
+    
+    <!-- Tipografía Literata y Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            terracotta: '#c86d51',
+                            'terracotta-dark': '#a24f36',
+                            peach: '#eed5cb',
+                            cream: '#fff8f6',
+                            'cream-light': '#fff1ec',
+                            espresso: '#2f1e18',
+                            muted: '#7d6e68',
+                            forest: '#47634f'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Literata', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#fff8f6] text-[#2f1e18] font-sans antialiased selection:bg-[#eed5cb] selection:text-[#a24f36]">
+
+    <!-- HEADER / NAVEGACIÓN -->
+    <header class="sticky top-0 z-50 bg-[#fff8f6]/90 backdrop-blur-md border-b border-[#eed5cb]/60 transition-all">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Marca & Estado -->
+            <div class="flex items-center gap-5">
+                <a href="landing-css/index.html" class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-[#eed5cb] flex items-center justify-center text-[#c86d51]">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                            <path d="M12 2C8 2 4 4 3 8c-1 4 .5 8 3 10v2h12v-2c2.5-2 4-6 3-10-1-4-5-6-9-6zm-4 4c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1zm8 0c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1z"/>
+                        </svg>
+                    </div>
+                    <span class="font-serif text-2xl font-bold tracking-tight text-[#2f1e18]">MichiCafé</span>
+                </a>
+                <div class="hidden sm:flex items-center gap-2 px-3 py-1 rounded-full bg-[#fff1ec] border border-[#eed5cb] text-xs font-medium text-[#7d6e68]">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    Abierto hoy: 10:00 – 20:00
+                </div>
+            </div>
+            
+            <!-- Menú Enlaces -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-[#7d6e68]">
+                <a href="landing-css/index.html" class="hover:text-[#c86d51] transition-colors">Inicio</a>
+                <a href="Nuestros michi.html" class="text-[#c86d51] font-semibold border-b-2 border-[#c86d51] pb-1">Nuestros Michis</a>
+                <a href="Menu.html" class="hover:text-[#c86d51] transition-colors">Menú</a>
+                <a href="Reservacione y reglas.html" class="hover:text-[#c86d51] transition-colors">Reservaciones & Reglas</a>
+            </nav>
+            
+            <!-- CTA -->
+            <div class="flex items-center gap-3">
+                <a href="Reservacione y reglas.html" class="px-5 py-2.5 rounded-full bg-[#c86d51] hover:bg-[#a24f36] text-white font-medium text-sm transition shadow-sm hover:shadow-md">
+                    Reservar Mesa
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12 lg:py-16">
+        <!-- SECCIÓN INTRODUCCIÓN -->
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-10 border-b border-[#eed5cb]/60">
+            <div class="max-w-2xl space-y-4">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#fff1ec] border border-[#eed5cb] text-xs font-semibold text-[#c86d51] uppercase tracking-wider">
+                    🐾 Compañeros con Bigotes & Tazas Tibias
+                </div>
+                <h1 class="font-serif text-4xl sm:text-5xl font-normal text-[#2f1e18]">
+                    Nuestros Habitantes Felinos
+                </h1>
+                <p class="text-base sm:text-lg text-[#7d6e68] leading-relaxed">
+                    Conoce a la manada residente de MichiCafé. Todos nuestros michis provienen de refugios aliados; algunos son residentes permanentes terapeutas y otros están en busca de su hogar definitivo.
+                </p>
+            </div>
+            <!-- Contador Sanatorio -->
+            <div class="flex items-center gap-4 bg-white px-5 py-3.5 rounded-2xl border border-[#eed5cb] shadow-sm">
+                <div class="w-10 h-10 rounded-full bg-[#eed5cb] text-[#c86d51] flex items-center justify-center font-bold text-sm">
+                    14 ♡
+                </div>
+                <div>
+                    <span class="text-[11px] uppercase tracking-wider text-[#7d6e68] font-bold block">En el santuario</span>
+                    <span class="text-sm font-semibold text-[#2f1e18]">8 listos para adopción</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- FILTROS DE CATEGORÍA -->
+        <div class="flex flex-wrap gap-2.5 pt-8 pb-12">
+            <button class="px-4 py-2 rounded-full bg-[#2f1e18] text-white text-xs font-semibold shadow-sm transition">
+                Todos (6)
+            </button>
+            <button class="px-4 py-2 rounded-full bg-white hover:bg-[#fff1ec] border border-[#eed5cb] text-xs font-medium text-[#7d6e68] transition flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-[#c86d51]"></span> En Adopción
+            </button>
+            <button class="px-4 py-2 rounded-full bg-white hover:bg-[#fff1ec] border border-[#eed5cb] text-xs font-medium text-[#7d6e68] transition flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-[#47634f]"></span> Residentes Fijos
+            </button>
+            <button class="px-4 py-2 rounded-full bg-white hover:bg-[#fff1ec] border border-[#eed5cb] text-xs font-medium text-[#7d6e68] transition">
+                Juguetones
+            </button>
+            <button class="px-4 py-2 rounded-full bg-white hover:bg-[#fff1ec] border border-[#eed5cb] text-xs font-medium text-[#7d6e68] transition">
+                Tranquilos / Falderos
+            </button>
+            <button class="px-4 py-2 rounded-full bg-white hover:bg-[#fff1ec] border border-[#eed5cb] text-xs font-medium text-[#7d6e68] transition">
+                Curiosos
+            </button>
+        </div>
+
+        <!-- GRILLA DE FICHAS DE MICHIS -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- 1. Oliver -->
+            <article class="bg-white rounded-3xl border border-[#eed5cb] overflow-hidden shadow-sm hover:shadow-md transition flex flex-col group">
+                <div class="relative aspect-[4/3] bg-[#eed5cb] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?q=80&w=800&auto=format&fit=crop" alt="Oliver" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-[#a24f36] text-white text-[11px] font-semibold flex items-center gap-1">
+                        <span class="w-1.5 h-1.5 rounded-full bg-white"></span> En Adopción
+                    </span>
+                    <button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/80 hover:bg-white text-[#7d6e68] hover:text-[#c86d51] flex items-center justify-center transition backdrop-blur shadow-sm">
+                        ♡
+                    </button>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="font-serif text-2xl font-bold text-[#2f1e18]">Oliver</h3>
+                            <span class="text-xs text-[#7d6e68]">2 años • Macho</span>
+                        </div>
+                        <p class="text-xs font-medium text-[#c86d51]">Pelaje atigrado naranja cálido</p>
+                        <div class="flex flex-wrap gap-1.5 pt-1">
+                            <span class="px-2.5 py-0.5 rounded-full bg-[#fff1ec] text-[11px] text-[#7d6e68]">Siestas al sol</span>
+                            <span class="px-2.5 py-0.5 rounded-full bg-[#fff1ec] text-[11px] text-[#7d6e68]">Caricias en barbilla</span>
+                            <span class="px-2.5 py-0.5 rounded-full bg-[#fff1ec] text-[11px] text-[#7d6e68]">Faldero</span>
+                        </div>
+                        <p class="text-xs text-[#7d6e68] italic pt-2 leading-relaxed">
+                            "Si pides un latte de avena y te sientas en el sillón de mimbre, probablemente termine ronroneando en tu regazo."
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3 pt-3">
+                        <button class="py-2.5 rounded-full bg-[#fff1ec] hover:bg-[#eed5cb] text-[#2f1e18] text-xs font-semibold transition text-center">
+                            Historia
+                        </button>
+                        <button class="py-2.5 rounded-full bg-[#a24f36] hover:bg-[#c86d51] text-white text-xs font-semibold transition text-center">
+                            Postularse
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 2. Mochi -->
+            <article class="bg-white rounded-3xl border border-[#eed5cb] overflow-hidden shadow-sm hover:shadow-md transition flex flex-col group">
+                <div class="relative aspect-[4/3] bg-[#eed5cb] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?q=80&w=800&auto=format&fit=crop" alt="Mochi" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-[#a24f36] text-white text-[11px] font-semibold flex items-center gap-1">
+                        <span class="w-1.5 h-1.5 rounded-full bg-white"></span> En Adopción
+                    </span>
+                    <button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/80 hover:bg-white text-[#7d6e68] hover:text-[#c86d51] flex items-center justify-center transition backdrop-blur shadow-sm">
+                        ♡
+                    </button>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="font-serif text-2xl font-bold text-[#2f1e18]">Mochi</h3>
+                            <span class="text-xs text-[#7d6e68]">1 año • Hembra</span>
+                        </div>
+                        <p class="text-xs font-medium text-[#c86d51]">Blanca con suaves manchitas calicó</p>
+                        <div class="flex flex-wrap gap-1.5 pt-1">
+                            <span class="px-2.5 py-0.5 rounded-full bg-[#fff1ec] text-[11px] text-[#7d6e68]">Curiosa nata</span>
+                            <span class="px-2.5 py-0.5 rounded-full bg-[#fff1ec] text-[11px] text-[#7d6e68]">Plumitas y varitas</span>
+                            <span class="px-2.5 py-0.5 rounded-full bg-[#fff1ec] text-[11px] text-[#7d6e68]">Sociable</span>
+                        </div>
+                        <p class="text-xs text-[#7d6e68] italic pt-2 leading-relaxed">
+                            "Cada caja nueva que entra a la barra de café merece una inspección exhaustiva de mi parte."
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3 pt-3">
+                        <button class="py-2.5 rounded-full bg-[#fff1ec] hover:bg-[#eed5cb] text-[#2f1e18] text-xs font-semibold transition text-center">
+                            Historia
+                        </button>
+                        <button class="py-2.5 rounded-full bg-[#a24f36] hover:bg-[#c86d51] text-white text-xs font-semibold transition text-center">
+                            Postularse
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 3. Simba -->
+            <article class="bg-white rounded-3xl border border-[#eed5cb] overflow-hidden shadow-sm hover:shadow-md transition flex flex-col group">
+                <div class="relative aspect-[4/3] bg-[#eed5cb] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?q=80&w=800&auto=format&fit=crop" alt="Simba" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-[#47634f] text-white text-[11px] font-semibold flex items-center gap-1">
+                        🛡️ Residente Fijo
+                    </span>
+                    <button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/80 hover:bg-white text-[#7d6e68] hover:text-[#c86d51] flex items-center justify-center transition backdrop-blur shadow-sm">
+                        ♡
+                    </button>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="font-serif text-2xl font-bold text-[#2f1e18]">Simba</h3>
+                            <span class="text-xs text-[#7d6e68]">4 años • Macho</span>
+                        </div>
+                        <p class="text-xs font-medium text-[#47634f]">Pelirrojo majestuoso semilargo</p>
+                        <div class="flex flex-wrap gap-1.5 pt-1">
+                            <span class="px-2.5 py-0.5 rounded-full bg-[#fff1ec] text-[11px] text-[#7d6e68]">Rey del sofá</span>
+                            <span class="px-2.5 py-0.5 rounded-full bg-[#fff1ec] text-[11px] text-[#7d6e68]">Terapeuta oficial</span>
+                            <span class="px-2.5 py-0.5 rounded-full bg-[#fff1ec] text-[11px] text-[#7d6e68]">Paz total</span>
+                        </div>
+                        <p class="text-xs text-[#7d6e68] italic pt-2 leading-relaxed">
+                            "El sofá verde olivo es mi trono. Puedes acariciar mi cuello suavemente mientras trabajas en tu laptop."
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3 pt-3">
+                        <button class="py-2.5 rounded-full bg-[#fff1ec] hover:bg-[#eed5cb] text-[#2f1e18] text-xs font-semibold transition text-center">
+                            Historia
+                        </button>
+                        <button class="py-2.5 rounded-full bg-[#47634f] hover:bg-[#384f3f] text-white text-xs font-semibold transition text-center">
+                            Visitarlo
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 4. Luna -->
+            <article class="bg-white rounded-3xl border border-[#eed5cb] overflow-hidden shadow-sm hover:shadow-md transition flex flex-col group">
+                <div class="relative aspect-[4/3] bg-[#eed5cb] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?q=80&w=800&auto=format&fit=crop" alt="Luna" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-[#a24f36] text-white text-[11px] font-semibold flex items-center gap-1">
+                        <span class="w-1.5 h-1.5 rounded-full bg-white"></span> En Adopción
+                    </span>
+                    <button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/80 hover:bg-white text-[#7d6e68] hover:text-[#c86d51] flex items-center justify-center transition backdrop-blur shadow-sm">
+                        ♡
+                    </button>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="font-serif text-2xl font-bold text-[#2f1e18]">Luna</h3>
+                            <span class="text-xs text-[#7d6e68]">3 años • Hembra</span>
+                        </div>
+                        <p class="text-xs font-medium text-[#c86d51]">Negro azabache con ojos ámbar</p>
+                        <div class="flex flex-wrap gap-1.5 pt-1">
+                            <span class="px-2.5 py-0.5 rounded-full bg-[#fff1ec] text-[11px] text-[#7d6e68]">Cariñosa</span>
+                            <span class="px-2.5 py-0.5 rounded-full bg-[#fff1ec] text-[11px] text-[#7d6e68]">Vocal y dulce</span>
+                            <span class="px-2.5 py-0.5 rounded-full bg-[#fff1ec] text-[11px] text-[#7d6e68]">Amante de mantas</span>
+                        </div>
+                        <p class="text-xs text-[#7d6e68] italic pt-2 leading-relaxed">
+                            "Tengo un maullido chirriante para saludarte cada vez que entras. Busco una familia que ame los mimos continuos."
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3 pt-3">
+                        <button class="py-2.5 rounded-full bg-[#fff1ec] hover:bg-[#eed5cb] text-[#2f1e18] text-xs font-semibold transition text-center">
+                            Historia
+                        </button>
+                        <button class="py-2.5 rounded-full bg-[#a24f36] hover:bg-[#c86d51] text-white text-xs font-semibold transition text-center">
+                            Postularse
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 5. Capuchino -->
+            <article class="bg-white rounded-3xl border border-[#eed5cb] overflow-hidden shadow-sm hover:shadow-md transition flex flex-col group">
+                <div class="relative aspect-[4/3] bg-[#eed5cb] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1513360309081-38f076278f1e?q=80&w=800&auto=format&fit=crop" alt="Capuchino" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-[#a24f36] text-white text-[11px] font-semibold flex items-center gap-1">
+                        <span class="w-1.5 h-1.5 rounded-full bg-white"></span> En Adopción
+                    </span>
+                    <button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/80 hover:bg-white text-[#7d6e68] hover:text-[#c86d51] flex items-center justify-center transition backdrop-blur shadow-sm">
+                        ♡
+                    </button>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="font-serif text-2xl font-bold text-[#2f1e18]">Capuchino</h3>
+                            <span class="text-xs text-[#7d6e68]">8 meses • Macho</span>
+                        </div>
+                        <p class="text-xs font-medium text-[#c86d51]">Siamés mestizo de puntas café</p>
+                        <div class="flex flex-wrap gap-1.5 pt-1">
+                            <span class="px-2.5 py-0.5 rounded-full bg-[#fff1ec] text-[11px] text-[#7d6e68]">Trepador ágil</span>
+                            <span class="px-2.5 py-0.5 rounded-full bg-[#fff1ec] text-[11px] text-[#7d6e68]">Enérgico</span>
+                            <span class="px-2.5 py-0.5 rounded-full bg-[#fff1ec] text-[11px] text-[#7d6e68]">Joven explorador</span>
+                        </div>
+                        <p class="text-xs text-[#7d6e68] italic pt-2 leading-relaxed">
+                            "Llego al estante más alto en 3 segundos. Necesito un hogar con rascadores divertidos y ganas de jugar sin parar."
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3 pt-3">
+                        <button class="py-2.5 rounded-full bg-[#fff1ec] hover:bg-[#eed5cb] text-[#2f1e18] text-xs font-semibold transition text-center">
+                            Historia
+                        </button>
+                        <button class="py-2.5 rounded-full bg-[#a24f36] hover:bg-[#c86d51] text-white text-xs font-semibold transition text-center">
+                            Postularse
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 6. Cleo -->
+            <article class="bg-white rounded-3xl border border-[#eed5cb] overflow-hidden shadow-sm hover:shadow-md transition flex flex-col group">
+                <div class="relative aspect-[4/3] bg-[#eed5cb] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?q=80&w=800&auto=format&fit=crop" alt="Cleo" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-[#47634f] text-white text-[11px] font-semibold flex items-center gap-1">
+                        🛡️ Residente Fija
+                    </span>
+                    <button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/80 hover:bg-white text-[#7d6e68] hover:text-[#c86d51] flex items-center justify-center transition backdrop-blur shadow-sm">
+                        ♡
+                    </button>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="font-serif text-2xl font-bold text-[#2f1e18]">Cleo</h3>
+                            <span class="text-xs text-[#7d6e68]">5 años • Hembra</span>
+                        </div>
+                        <p class="text-xs font-medium text-[#47634f]">Carey mimosa con destellos canela</p>
+                        <div class="flex flex-wrap gap-1.5 pt-1">
+                            <span class="px-2.5 py-0.5 rounded-full bg-[#fff1ec] text-[11px] text-[#7d6e68]">Reina de la ventana</span>
+                            <span class="px-2.5 py-0.5 rounded-full bg-[#fff1ec] text-[11px] text-[#7d6e68]">Ronroneo nivel 10</span>
+                            <span class="px-2.5 py-0.5 rounded-full bg-[#fff1ec] text-[11px] text-[#7d6e68]">Serena</span>
+                        </div>
+                        <p class="text-xs text-[#7d6e68] italic pt-2 leading-relaxed">
+                            "Me paso las tardes mirando las aves desde el ventanal de roble. Cuando termines tu libro, acércate para un saludo con la frente."
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3 pt-3">
+                        <button class="py-2.5 rounded-full bg-[#fff1ec] hover:bg-[#eed5cb] text-[#2f1e18] text-xs font-semibold transition text-center">
+                            Historia
+                        </button>
+                        <button class="py-2.5 rounded-full bg-[#47634f] hover:bg-[#384f3f] text-white text-xs font-semibold transition text-center">
+                            Visitarla
+                        </button>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- SECCIÓN: ¿CÓMO ADOPTAR EN MICHICAFÉ? -->
+        <section class="mt-20 p-8 sm:p-12 rounded-3xl bg-[#fff1ec] border border-[#eed5cb]">
+            <div class="max-w-2xl mb-10">
+                <span class="text-xs font-bold text-[#c86d51] uppercase tracking-wider block mb-1">🐾 Adopción Ética y Responsable</span>
+                <h2 class="font-serif text-3xl font-normal text-[#2f1e18]">¿Cómo adoptar en MichiCafé?</h2>
+                <p class="text-sm text-[#7d6e68] mt-2">Buscamos matches perfectos y duraderos para toda la vida. Nuestro proceso consta de tres sencillos pasos enfocados en el bienestar y la tranquilidad del michi.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Paso 01 -->
+                <div class="bg-white p-6 rounded-2xl border border-[#eed5cb] space-y-3">
+                    <div class="text-2xl font-serif text-[#c86d51] font-bold">01</div>
+                    <h4 class="font-serif text-base font-bold text-[#2f1e18]">Entrevista Previa</h4>
+                    <p class="text-xs text-[#7d6e68] leading-relaxed">Completa el formulario en línea o charla con nuestras mediadoras en el café para conocer tu estilo de vida, espacio y compatibilidad con el felino.</p>
+                </div>
+                <!-- Paso 02 -->
+                <div class="bg-white p-6 rounded-2xl border border-[#eed5cb] space-y-3">
+                    <div class="text-2xl font-serif text-emerald-600 font-bold">02</div>
+                    <h4 class="font-serif text-base font-bold text-[#2f1e18]">Periodo de Adaptación</h4>
+                    <p class="text-xs text-[#7d6e68] leading-relaxed">Convivencia guiada durante varias visitas programadas en horarios tranquilos, asegurando que ambos se sientan cómodos y en confianza.</p>
+                </div>
+                <!-- Paso 03 -->
+                <div class="bg-white p-6 rounded-2xl border border-[#eed5cb] space-y-3">
+                    <div class="text-2xl font-serif text-amber-600 font-bold">03</div>
+                    <h4 class="font-serif text-base font-bold text-[#2f1e18]">Seguimiento Responsable</h4>
+                    <p class="text-xs text-[#7d6e68] leading-relaxed">Firma de compromiso ético, entrega a domicilio con kit de inicio (camita con olor familiar) y acompañamiento veterinario los primeros 90 días.</p>
+                </div>
+            </div>
+
+            <!-- Banner pie de adopción -->
+            <div class="mt-8 pt-6 border-t border-[#eed5cb]/60 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-2 text-xs text-[#7d6e68]">
+                    <span>🛡️</span>
+                    <span>Todos los michis se entregan desparasitados, vacunados y esterilizados.</span>
+                </div>
+                <button class="px-6 py-3 rounded-full bg-[#a24f36] hover:bg-[#c86d51] text-white text-xs font-semibold shadow-sm transition">
+                    Iniciar Solicitud General
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#fff1ec] border-t border-[#eed5cb] py-16 text-[#7d6e68] text-sm mt-12">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+            <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-full bg-[#eed5cb] flex items-center justify-center text-[#c86d51]">🐾</div>
+                    <span class="font-serif text-xl font-bold text-[#2f1e18]">MichiCafé</span>
+                </div>
+                <p class="text-xs leading-relaxed">Un refugio sereno de café de especialidad y ronroneos. Fomentamos la adopción responsable, el bienestar felino y la pausa consciente en cada taza.</p>
+            </div>
+            <div>
+                <h5 class="font-bold text-[#2f1e18] text-xs uppercase tracking-wider mb-3">Horarios & Visitas</h5>
+                <p class="text-xs leading-relaxed"><strong class="text-[#2f1e18]">Martes a Domingo:</strong><br>10:00 hrs – 20:00 hrs<br><span class="text-[11px] text-[#c86d51]">Lunes cerrado por descanso y chequeo veterinario felino.</span></p>
+                <p class="text-xs mt-3 leading-relaxed"><strong class="text-[#2f1e18]">Ubicación:</strong><br>Calle Las Delicias 418, Barrio Gótico<br>Ciudad de México, CP 06700</p>
+            </div>
+            <div>
+                <h5 class="font-bold text-[#2f1e18] text-xs uppercase tracking-wider mb-3">Compromiso Felino</h5>
+                <div class="p-3 rounded-xl bg-white/60 border border-[#eed5cb] space-y-1">
+                    <p class="text-xs font-semibold text-[#2f1e18]">🐾 100% Bienestar Protegido</p>
+                    <p class="text-[11px] leading-relaxed">Todos nuestros residentes provienen de rescates urbanos. Contamos con protocolos de cero estrés, dietas veterinarias y supervisión ética permanente.</p>
+                </div>
+            </div>
+            <div>
+                <h5 class="font-bold text-[#2f1e18] text-xs uppercase tracking-wider mb-3">Historias & Adopciones</h5>
+                <p class="text-xs mb-3">Recibe novedades semanales sobre nuevos michis en adopción, talleres y eventos de la comunidad.</p>
+                <div class="flex gap-2">
+                    <input type="email" placeholder="tu-correo@ejemplo.com" class="w-full px-3 py-2 text-xs rounded-full border border-[#eed5cb] bg-white focus:outline-none focus:ring-1 focus:ring-[#c86d51]">
+                    <button class="px-4 py-2 rounded-full bg-[#a24f36] text-white text-xs font-semibold hover:bg-[#c86d51]">Unirse</button>
+                </div>
+                <span class="text-[10px] text-[#7d6e68] block mt-1">Cero spam. Solo ronroneos y amor.</span>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-12 pt-6 border-t border-[#eed5cb]/60 flex flex-col sm:flex-row justify-between text-xs text-[#7d6e68] gap-4">
+            <p>© 2024 MichiCafé Sanctuary & Specialty Coffee. Todos los derechos reservados.</p>
+            <div class="flex gap-4">
+                <a href="#" class="hover:underline">Reglamento de Sala</a>
+                <a href="#" class="hover:underline">Aviso de Privacidad</a>
+                <a href="#" class="hover:underline">Protocolo de Bienestar</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

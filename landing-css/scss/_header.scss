@@ -1,0 +1,9 @@
+header {
+  background-color: rgba($color-fondo, 0.9);
+  border-bottom: 1px solid rgba($color-secundario, 0.6);
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

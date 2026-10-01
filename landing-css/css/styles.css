@@ -1,0 +1,28 @@
+/* Archivo principal de CSS tradicional */
+@import url('footer.css');
+
+/* Estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-content > section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
